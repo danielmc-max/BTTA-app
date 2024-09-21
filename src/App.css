@@ -1,38 +1,321 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MainSection {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+img {
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: #00FFFF;
+}
+a:visited {
+  color: #FF00FF;
+}
+a:hover {
+  color: #AAFFFF;
+}
+a:focus {
+  color: #AAFFFF;
+}
+a:active {
+  color: #00FFFF;
+}
+.Navigation {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: #d3d3d3;
+  background-color: #23abb0;
+  width: 100%;
+  padding: 5px;
+  box-align: middle;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+ul.NavigationMenus {
+  display: flex;
+  align-items: right;
+  padding: 0;
+}
+ul.NavigationMenus li {
+  list-style: none;
+  margin-right: 30px;
+  
+}
+ul.NavigationMenus li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 5px;
+}
+ul.NavigationMenus li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 0%;
+  bottom: 0;
+  transition: 0.3s;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+}
+
+ul.NavigationMenus li a:hover:after{
+  width: 100%;
+  transition: 0.3s;
+}
+
+.Header {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  margin-top: 60px;
+}
+.inquire {
+  box-sizing: border-box;
+  position: relative;
+  font-weight: bold;
+  font-size: 6.0vw;
+  text-align: left;
   color: white;
 }
+.inquire-heading {
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+}
+.inquire .inquire-button {
+  position: absolute;
+  overflow: hidden;
+  bottom: 2.5vh;
+  left: 25vw;
+  background-color: #17878a;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+}
+.inquire .inquire-button a {
+  text-decoration: none;
+  color: white;
+}
+.inquire .inquire-button:hover {
+  background-color: #0f5c5f
+}
+.welcome {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #3565b9;
+  color: white;
+}
+.welcome-heading {
+  position: absolute;
+  text-wrap: wrap;
+  font-weight: bold;
+  font-size: 5.0vw;
+  top: 25px;
+  left: 25px;
+}
+.welcome-p {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: absolute;
+  width: 100%;
+  left: 5%;
+  bottom: 7%;
+}
+.casual {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  background-color: #23abb0;
+}
+.casual-h1 {
+  position: absolute;
+  width: 48%;
+  float: right;
+  right: 0px;
+  font-size: 4.6vw;
+  color: white;
+  
+}
+.casual-img {
+  position: relative;
+  width: 50%;
+}
+.casual-p {
+  position: relative;
+  text-wrap: wrap;
+  width: 50%;
+  float: right;
+  top: 140px;
+  left: 40px;
+  font-size: 2.0vw;
+  color: white;
+}
+.pro {
+  box-sizing: border-box;
+  position: relative;
+  max-height: 400;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  background-color: #ce326f;
+}
+.pro img {
+  position: relative;
+  float: right;
+  width: 50%;
+  left: 50%;
+}
+.pro-heading {
+  position: absolute;
+  float: left;
+  left: 25px;
+  width: 50%;
+  font-size: 4.6vw;
+  color: white;
+  
+}
+.pro-p {
+  position: absolute;
+  text-wrap: wrap;
+  float: left;
+  left: 20px;
+  top: 140px;
+  width: 50%;
+  font-size: 2.0vw;
+  color: white;
+}
+.video {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 720px;
+  color: white;
+  background-color: black;
+}
+.video iframe {
+  width: 1000px;
+  height: 550px;
+}
+.tournaments {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 720px;
+  color: white;
+  background-color: black;
+}
+.tournaments table, th, td {
+  padding: 32px;
+  border: 1.8px solid black;
+  border-collapse: collapse;
+  width: 80%;
 
-.App-link {
-  color: #61dafb;
+}
+.tournaments table {
+  width: 50%;
+  height: 20%;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+.tournaments table th {
+  color: white;
+  background-color: gray;
+}
+.calendar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #23abb0;
+}
+.calendar iframe {
+  top: 10px;
+  bottom: 10px;
+}
+.photo-gallery {
+  width: 100%;
+  height: 450px;
+  color: white;
+  background-color: #3565b9 
+}
+.contact {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  color: white;
+  background-color: #ce326f;
+}
+.contact img {
+  position: relative;
+  width: 50%;
+}
+.contact h1 {
+  position: absolute;
+  float: right;
+  width: 50%;
+  right: 0px;
+  font-size: 4.5vw;
+
+}
+.Heading {
+  flex: 0 0 100%;
+}
+.activeNavItem a:after{
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 100% !important;
+  bottom: 0;
+  transition: 0.3s;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+  color:hotpink !important;
+}
+li.activeNavItem a:after{
+  background: #f2f2f270!important;
+} 
+.Footer {
+  clear: both;
+  color: #d3d3d3;
+  background-color: #000000;
+  width: 100%;
+}
+.arena {
+  background-image: url('./table_tennis_arena_gradient.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+@media screen and (max-width: 1280px) {
+
+  .Main {
+    display: block;
+    flex-direction: column;
   }
 }
