@@ -1,4 +1,4 @@
-.MainSection {
+.Main {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: flex;
   overflow: hidden;
@@ -79,7 +79,6 @@ ul.NavigationMenus li a:hover:after{
   margin-top: 60px;
 }
 .inquire {
-  box-sizing: border-box;
   position: relative;
   font-weight: bold;
   font-size: 6.0vw;
@@ -112,7 +111,9 @@ ul.NavigationMenus li a:hover:after{
   background-color: #0f5c5f
 }
 .welcome {
-  box-sizing: border-box;
+  background-image: url('./table_tennis_paddle_vector_cropped.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   position: relative;
   width: 100%;
@@ -137,7 +138,6 @@ ul.NavigationMenus li a:hover:after{
   bottom: 7%;
 }
 .casual {
-  box-sizing: border-box;
   display: flex;
   width: 100%;
   background-color: #23abb0;
@@ -166,7 +166,6 @@ ul.NavigationMenus li a:hover:after{
   color: white;
 }
 .pro {
-  box-sizing: border-box;
   position: relative;
   max-height: 400;
   display: flex;

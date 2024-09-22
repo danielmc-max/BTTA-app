@@ -19,7 +19,7 @@ return (
                     <li
                     key={item.id}
                     onClick={() => setSelectedNavItem(item.name)}
-                    classname={selectedNavItem === item.name ? `activeNavItem` : ""}
+                    className={selectedNavItem === item.name ? `activeNavItem` : ""}
                     >
                         <a href={`#${item.name}`}>{item.title}</a>
                     </li>
