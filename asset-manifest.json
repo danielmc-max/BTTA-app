@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/github-pages-app/static/css/main.573493bd.css",
+    "main.js": "/github-pages-app/static/js/main.15f0ae17.js",
+    "static/js/453.ed3810f9.chunk.js": "/github-pages-app/static/js/453.ed3810f9.chunk.js",
+    "static/media/table_tennis_arena_gradient.jpeg": "/github-pages-app/static/media/table_tennis_arena_gradient.5c4df3dbd18c83fa5f29.jpeg",
+    "static/media/table_tennis_paddle_vector_cropped.jpeg": "/github-pages-app/static/media/table_tennis_paddle_vector_cropped.9aba2440e946789fba15.jpeg",
+    "index.html": "/github-pages-app/index.html",
+    "main.573493bd.css.map": "/github-pages-app/static/css/main.573493bd.css.map",
+    "main.15f0ae17.js.map": "/github-pages-app/static/js/main.15f0ae17.js.map",
+    "453.ed3810f9.chunk.js.map": "/github-pages-app/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.573493bd.css",
+    "static/js/main.15f0ae17.js"
+  ]
+}
